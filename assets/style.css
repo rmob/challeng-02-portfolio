@@ -1,0 +1,168 @@
+:root {
+    --border: 5px solid #ddd;
+    --radius: 5px;
+    --gray: #ddf;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 50px;
+    
+}
+
+.header h1 {
+    background-color:  black;
+    color: white;
+    padding: 5px;
+    margin-bottom: 0;
+    margin-right: 40%;
+    border-radius: 5px;;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 1em;
+    margin-bottom: 5px;
+    list-style: none;
+    padding-left: 0;
+    border-radius: var(--radius);
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.section {
+    display: flex;
+}
+
+
+#about-info {
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 80%;
+    min-width: 400px;
+}
+
+#about-me {
+   margin-bottom: 100px;
+}
+
+#big-pic {
+    flex-basis: 1;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 3fr;
+}
+
+/*.grid ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-end;
+}*/
+
+.banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    height: 200px;
+    flex: 1;
+    background-image: linear-gradient(#fff 50%, #ccc 100%, #fff 0%);
+    padding-right: 200px;
+    font-size: 40px;
+    margin-bottom: 100px;
+    box-shadow: 10px 10px 25px pink;
+}
+
+.banner h2 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 50px;
+    float: right;
+    padding-right: 20%;
+    color:  black;
+}
+
+.section-title {
+    border-right: var(--border);
+    margin: 10px 0;
+}
+
+.gallery {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex: 1;
+    max-width: 80%;
+    margin: 20px 0;
+    padding-left: 5%;
+    gap: 2rem;
+}
+
+.gallery img {
+    border: var(--border);
+    margin: 0;
+    padding: 0;
+}
+
+
+.gallery div img {
+    transition: all 0.5s ease-in-out;
+    object-fit: fill;
+}
+
+
+.gallery div:hover  {
+    /* opacity: .5; */
+    filter:hue-rotate(90deg);
+    filter: drop-shadow(3px 3px 10px);
+
+}
+
+.tool-tag {
+    display: flex;
+    border: var(--border);
+    padding: 0;
+    position: relative;
+    bottom: -183px;
+    background-color: white;
+    justify-content: flex-end;
+    width: 25%;
+}
+
+footer {
+    margin-bottom: 100px;
+    padding: 100px 0 0 0;
+}
+
+#contact-info {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-end;
+    max-width: 80%;
+  
+}
